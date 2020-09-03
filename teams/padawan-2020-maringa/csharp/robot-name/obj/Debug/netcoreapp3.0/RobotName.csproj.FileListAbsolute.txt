@@ -1,0 +1,4 @@
+C:\Users\gabriel.dainezi\Documents\Exercism\teams\padawan-2020-maringa\csharp\robot-name\obj\Debug\netcoreapp3.0\RobotName.csprojAssemblyReference.cache
+C:\Users\gabriel.dainezi\Documents\Exercism\teams\padawan-2020-maringa\csharp\robot-name\obj\Debug\netcoreapp3.0\RobotName.AssemblyInfoInputs.cache
+C:\Users\gabriel.dainezi\Documents\Exercism\teams\padawan-2020-maringa\csharp\robot-name\obj\Debug\netcoreapp3.0\RobotName.AssemblyInfo.cs
+C:\Users\gabriel.dainezi\Documents\Exercism\teams\padawan-2020-maringa\csharp\robot-name\obj\Debug\netcoreapp3.0\RobotName.csproj.CoreCompileInputs.cache

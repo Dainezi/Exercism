@@ -15,13 +15,9 @@ public class Robot
     }
 
 
-    public void Reset()
+    public string Reset()
     {
-        Nome = Gerador();
-    }
-
-    public string Gerador()
-    {
+        //Nome = Gerador();
         string nome = "";
         do
         {
@@ -34,6 +30,21 @@ public class Robot
         while (!Unico(nome));
         return nome;
     }
+
+   // public string Gerador()
+    //{
+        //string nome = "";
+        //do
+        //{
+        //
+        //    for (int i = 0; i < 5; i++)
+        //    {
+        //       nome += (i < 2) ? ((char)_random.Next(65, 90)).ToString() : _random.Next(0, 9).ToString();
+        //    }
+        //}
+        //while (!Unico(nome));
+        //return nome;
+   // }
 
     public bool Unico(string name)
     {
