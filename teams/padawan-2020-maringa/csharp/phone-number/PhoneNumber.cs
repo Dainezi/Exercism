@@ -36,17 +36,14 @@ public class PhoneNumber
 {
     public static string Clean(string phoneNumber)
     {
-    var rgxvalid = new Regex(@"^[+]?([1]?)[(]?([2-9][0-9]{2})[)]?\D?([2-9][0-9]{2})\D?([0-9]{4})$");
+    var rgxvalid = new Regex(@"^(?:\+?1)?\D*\(?([2-9][0-9]{2})\)?\D*([2-9][0-9]{2})\D*([0-9]{4})\D*$");
 
-        
-    if (!rgxvalid.IsMatch(phoneNumber))
+        if (!rgxvalid.IsMatch(phoneNumber))
         throw new ArgumentException("Formato invalido");
 
-        //var match = rgxvalid.Match(phoneNumber);
-        //var numeroLimpo = match.Groups[1].Value + match.Groups[2].Value + match.Groups[3].Value+match.Groups[4].Value;
+        var match = rgxvalid.Match(phoneNumber);
+        var numeroLimpo = match.Groups[1].Value + match.Groups[2].Value + match.Groups[3].Value;
 
-        var rgxLimpo = new Regex(phoneNumber.Replace("(+-. )", ""));
-
-        return Convert.ToString(rgxLimpo);
+        return numeroLimpo;
     }
 }
